@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <title>Documentation - Installation ORMFramework</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <style>
+        .bold-text {
+            font-weight: bold;
+        }
+
+        .collection .selected {
+            background: mediumpurple;
+        }
+
+        .collection li[data-target] {
+            cursor: pointer;
+        }
+
+        .directory {
+            background: rgba(239, 239, 239, 0.5);
+            font-style: italic;
+            font-weight: bold;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            border-radius: 12px;
+            border: 1px solid gray;
+            padding: 0 3px 0 3px;
+        }
+
+        .hightlight code {
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            border-radius: 12px;
+            border: 1px solid gray;
+            height: auto;
+        }
+    </style>
+    <script>
+        $(window).ready(function () {
+
+            $($('.container')[0]).css('min-height', $(window).height() - 20 + 'px');
+
+            function initHightlight() {
+                let snippets = document.querySelectorAll('.hightlight code');
+                snippets.forEach(function (snippet, key) {
+                    hljs.highlightBlock(snippet);
+                });
+            }
+
+            initHightlight();
+
+            $('.responsive-img').materialbox();
+
+        });
+    </script>
+</head>
+<body class="purple">
+<div class="container white" style="border-left: 2px solid black; border-right: 2px solid black; border-bottom: 2px solid black;">
+    <div class="row">
+        <div class="col s12 center-align">
+            <h1 style="font-size: 30px;">
+                ORM Framework doc installation
+            </h1>
+        </div>
+    </div>
+    <div class="col s12">
+        <div class="row">
+            <div class="col s10 offset-s1">
+                <p class="bold-text"> Présentation </p>
+                <p>
+                    ORM Framework est un framework MVC orienté Webservices.
+                    Il est modulaire à l'extrème, c'est à dire qu'il lui faut un minimum de dépendences pour pouvoir fonctionner.
+                    Différents conceptes sont abordés dans cette doc.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s10 offset-s1">
+                <p class="bold-text">Installation</p>
+                <p>
+                    Pour installer le framework il suffit de se mêtre à l'endroit où est le fichier d'installation dans un terminal et taper :
+                    <pre class="hightlight"><code>php ormframework_1.0.3_alpha.php mon_dossier_d_install
+# pour avoir un vhost installe</code></pre>
+                    <br /> ou <br />
+                    <pre class="hightlight"><code>php ormframework_1.0.3_alpha_test.php mon_dossier_d_install
+# pour ne pas avoir de vhost installe</code></pre>
+                    <br />
+                    et suivre les instructions.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
