@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
     <title>Documentation - Installation ORMFramework</title>
+
     <link rel="stylesheet"
           href="css/libs/icons/material_icons.css">
     <link rel="stylesheet"
@@ -24,24 +25,9 @@
     <script rel="script"
             type="application/javascript"
             src="js/libs/hightlight/hightlight-9.12.0.min.js"></script>
-    <script>
-        $(window).ready(function () {
-
-            $($('.container')[0]).css('min-height', $(window).height() - 20 + 'px');
-
-            function initHightlight() {
-                let snippets = document.querySelectorAll('.hightlight code');
-                snippets.forEach(function (snippet, key) {
-                    hljs.highlightBlock(snippet);
-                });
-            }
-
-            initHightlight();
-
-            $('.responsive-img').materialbox();
-
-        });
-    </script>
+    <script rel="script"
+            type="application/javascript"
+            src="js/scripts.js"></script>
 </head>
 <body class="purple">
 <div class="container white" style="border-left: 2px solid black; border-right: 2px solid black; border-bottom: 2px solid black;">
