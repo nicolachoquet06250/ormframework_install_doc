@@ -1,0 +1,8 @@
+.bold-text {
+    font-weight: bold;
+}
+
+.hightlight code {
+    border: 1px solid gray;
+    height: auto;
+}
